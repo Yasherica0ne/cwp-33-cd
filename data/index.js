@@ -4,6 +4,7 @@ const Sequelize = require('sequelize');
 const config = require('../config.json');
 
 module.exports = () => {
+    console.log(process.env.NODE_ENV);
     const dbConfig = config.db[process.env.NODE_ENV || 'development'];
     const options = {
         host: dbConfig.options.host,
