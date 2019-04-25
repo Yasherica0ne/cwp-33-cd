@@ -8,7 +8,7 @@ const insertData = require('./data/insert-data');
 const apiRouter = require('./routes');
 const port = process.env.PORT || 3000;
 
-insertData(context);
+insertData(context());
 
 const app = express(http);
 
