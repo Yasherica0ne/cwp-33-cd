@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const commitRouter = require('./commit');
-const context = require('../data');
+const context = require('../data')();
 
 router.get('/', async (req, res, next) => {
     try {
