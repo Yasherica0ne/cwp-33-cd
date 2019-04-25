@@ -1,4 +1,5 @@
 module.exports = async function (context) {
+    console.log('----------inserting data -----------')
     await context.sequelize.sync({force: true});
 
     await context.repos.bulkCreate([
