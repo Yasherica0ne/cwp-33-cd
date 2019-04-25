@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "strat": "node index.js",
     "mysort": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
